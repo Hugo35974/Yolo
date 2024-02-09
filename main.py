@@ -1,8 +1,10 @@
 import os
 
 import cv2
+import matplotlib.pyplot as plt
 import torch
 
+plt.switch_backend('Agg')
 os.environ['QT_QPA_PLATFORM'] = 'xcb'
 # Charger YOLOv5 depuis torch.hub
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
