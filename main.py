@@ -1,6 +1,9 @@
+import os
+
 import cv2
 import torch
 
+os.environ['QT_QPA_PLATFORM'] = 'xcb'
 # Charger YOLOv5 depuis torch.hub
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
 
